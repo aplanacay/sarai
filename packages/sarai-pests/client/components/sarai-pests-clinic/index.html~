@@ -1,0 +1,441 @@
+<template name="SaraiPestsClinic">
+		
+		{{ >Banner}}
+		
+		<div id="container mdl-layout__content" class="homepage">
+			<div class="side"></div>
+			
+			{{ >About}}
+			<!--div class="max mdl-grid" style="background-color:#396834;height:2px;padding:0px 0px 0px 0px;"></div-->
+			{{ >AccurateDiagnostic}}
+			<!--div class="max mdl-grid" style="background-color:#396834;height:2px;padding:0px 0px 0px 0px;"></div-->
+			<hr/>
+			{{ >Advert}}
+			<hr/>
+			<!--div class="max mdl-grid" style="background-color:#396834;height:2px;padding:0px 0px 0px 0px;"></div-->	
+			{{ >Control}}
+			<hr/>
+			<!--div class="max mdl-grid" style="background-color:#396834;height:2px;padding:0px 0px 0px 0px;"></div-->
+			{{ >Expert}}
+		</div>
+		<div class="instructions">
+			{{ >SampleInstructions}}
+		</div>
+</template>
+
+
+
+<template name="Banner">
+		
+	<div id="banner">
+  	<img class="banner-image" src="/packages/sarai_sarai-pests/public/images/clinic/bg3.jpg" />
+  	<div class="banner-content-top">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--5-col banner-text">
+					<!--h1 class="title">Pest Clinic</h1>
+					<h4 class="title-desc">Ask for experts assistance on rice and corn pests</h4-->
+					<div class="mdl-cell mdl-cell--12-col">
+						<!--input class="search-bar" type="text" id="query" -->
+						<label class="mdl-button mdl-button--icon button-format" for="search">
+						  <!--i class="material-icons md-light md-48">search</i-->
+						</label>
+					</div>
+				</div>
+
+				<div class="mdl-cell mdl-cell--2-col"></div>
+			</div>	
+		</div>
+	</div>
+		
+</template>
+
+
+
+
+<template name="About">
+	<div class="max mdl-grid" style="background-color:white;height:2px;padding:0px 0px 0px 0px;"></div>
+	<div class="max  spacing-grid mdl-grid" style="padding:0px 0px 0px 0px;">
+		<div class="mdl-cell mdl-cell--8-col" style="margin-top:0px;margin-bottom:0px;margin-left:0px;">
+				<div class="max mdl-card">
+					<div class="about-bound mdl-grid">
+						<div class="mdl-cell mdl-cell--6-col">
+							<h2 id="concern" >Concerned in Increase Protection and Pest Management Services to its Clients</h2>	
+						</div>
+						<div class="about mdl-cell mdl-cell--6-col">
+							<img src="/packages/sarai_sarai-pests/public/images/clinic/field1.jpg" width="100%" height="300px;"/>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="mdl-cell mdl-cell--4-col" style="margin-top:0px;margin-bottom:0px;">
+				<div class="max mdl-card text-bg-white">
+					{{ >Services}}
+				</div>
+		</div>
+	</div>
+</template>
+
+
+
+<template name="AccurateDiagnostic">
+	<hr/>
+	<div class="max spacing-grid mdl-grid">
+		<div class="mdl-cell mdl-cell--4-col">
+			<div class="mdl-grid">
+					<img src="/packages/sarai_sarai-pests/public/images/clinic/field2.jpg" width="100%" height="250px;"/>
+			</div>
+		</div>
+		<div class="mdl-cell mdl-cell--8-col">
+			<div class="mdl-grid">
+					<h3 style="color:#777777;">Serving since 70s</h3>
+					<h5>Started in the late 70s, the Plant Pest Clinic is an extension program of the Crop Protection Cluster which offers pest management services such as accurate diagnostic and control recommendation to farmers. Through it, experts share their knowledge on pest identification and management, consultations, and offers other related services such as fungal, bacterial, and nematode analyses.</h5>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+
+<template name="Advert">
+	<div class="bg pest-result mdl-card" style="margin-top:0px;">
+		<div class="bg max mdl-grid" style="margin-top:0px;">
+		
+			
+			<div class="mdl-cell mdl-cell--6-col" style="color:#777777;">
+			<h3>Want to know more about pests?</h3>
+			<h4>Our experts provide us with detailed information about pests and their control technique</h4>
+			<a href="{{pathFor '/pests-lib'}}"><button id="pc-advert-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">VIEW FACTSHEET</button></a>
+			</div>
+		
+			<div class="mdl-cell mdl-cell--3-col">
+				<center>
+				<div class="max mdl-grid">
+					<img src="/packages/sarai_sarai-pests/public/images/clinic/leafhopper.jpg" width="250px;" height="150;"/>
+				</div>
+				</center>
+				<br/>
+				<div class="bg2 max mdl-grid">
+					<b>Leafhoppers & Planthoppers</b>
+				</div>
+				<div class="max mdl-grid">
+					<b>Symptoms: </b> Plants may show no symptoms of leafhoppers and planthopper damage
+				</div>
+			</div>
+			
+			<div class="mdl-cell mdl-cell--3-col">
+				<div class="max mdl-grid">
+					<center><img src="/packages/sarai_sarai-pests/public/images/clinic/leafhopper.jpg" width="250px;" height="150;"/></center>
+				</div>
+				<br/>
+				<div class="bg2 max mdl-grid">
+					<b>Leafhoppers & Planthoppers</b>
+				</div>
+				<div class="max mdl-grid">
+					<b>Symptoms: </b> Plants may show no symptoms of leafhoppers and planthopper damage
+				</div>
+			</div>
+			
+		</div>
+		<br/>
+	</div>
+	
+</template>
+
+
+
+<template name="Control">
+	<div class="max control-bg spacing-grid mdl-card">
+	<br/><br/>
+	<div class="mdl-grid">
+	<div class=" mdl-typography--display-1" style="color:#396834"><b>PEST CONTROL STEPS</b></div>
+	<!--h3 class="title font-body header-text">PEST CONTROL STEPS</h3--><br/>
+	</div><br/><br/>
+	
+	<div class="mdl-grid">
+		<div class="max card mdl-cell mdl-cell-3-col" style="padding-right:10px;border-right: 1px solid #eee;">	
+			<img src="/packages/sarai_sarai-pests/public/images/clinic/id_black.png" width="150px;" height="150px;"/>
+			<h4 class="subtitle mdl-typography--headline" style="color:#396834">
+			<b>Identify Pest</b></h4>
+			<br/>
+			<p>If you haven't spotted your pest yet, look for the signs and damages done.</p>
+			<!--p>You might want to <a href="/pestClinic/identify">identify the pest</a> by clicking the link.</p-->
+		</div>
+		<!--img src="/packages/sarai_sarai-pests/public/images/clinic/div-vertical.png" width="30px;" height="450px;"/-->
+		<div class="max card mdl-cell mdl-cell--3-col" style="padding-right:10px;border-right: 1px solid #eee;">	
+			<img src="/packages/sarai_sarai-pests/public/images/clinic/comp_black.png" width="150px;" height="150px;"/>
+			<h4 class="subtitle mdl-typography--headline" style="color:#396834">
+			<b>Learn About the Pest	</b></h4>
+			<br/>
+			<p>Look for existing data about the pest. <!--You might want to try our <a href="/pestClinic/factsheet">library</a>.--></p>
+		</div>
+		<!--img src="/packages/sarai_sarai-pests/public/images/clinic/div-vertical.png" width="30px;" height="450px;"/-->
+		<div class="max card mdl-cell mdl-cell--3-col" style="padding-right:10px;border-right: 1px solid #eee;">	
+			<img src="/packages/sarai_sarai-pests/public/images/clinic/assess_black.png" width="150px;" height="150px;"/>
+			<h4 class="subtitle mdl-typography--headline" style="color:#396834" >
+			
+			<b>Assess Pest	</b></h4>
+			<p></p>
+			<br/>
+			<p>If you are not sure and want to consult to a specialist, <a href="#" style="color:#396834">request assistance</a>.</p>
+		</div>
+		<!--img src="/packages/sarai_sarai-pests/public/images/clinic/div-vertical.png" width="30px;" height="450px;"/-->
+		<div class="max card mdl-cell mdl-cell--3-col">	
+			<img src="/packages/sarai_sarai-pests/public/images/clinic/control_black.png" width="150px;" height="150px;"/>
+			<h4 class="subtitle mdl-typography--headline" style="color:#396834">
+			<b>Control Pest</b></h4>
+			<br/>
+			<p>Use proper technique to eradicate pests in a cheaper and more successful approach.</p>
+		</div>
+	</div>
+	<br/>
+	</div>
+</template>
+
+
+
+<template name="Expert">
+
+	<center>
+	<div class="bg mdl-grid">
+		<div class="max mdl-cell mdl-cell--12-col" >
+		<div class=" mdl-typography--display-1" style="color:gray"><b>OUR EXPERTS</b></div>
+		</div>
+	</div>
+	</center>
+	
+	<div class="bg max mdl-grid">
+		<div class="mdl-cell mdl-cell--1-col">
+			<!--center><i class="left material-icons md-48 margin">chevron_left</i></center-->
+		</div>
+		<div class="mdl-cell mdl-cell--10-col">
+			<div class="max mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col">
+					<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="green" />
+					</svg>
+					<br/>
+					<p>
+					<b>Melvin D. Ebuega</b><br/>
+					University Researcher<br/>
+					NCPC, UPLB
+					</p>
+					</center>
+				</div>
+				<div class="mdl-cell mdl-cell--3-col">
+					<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="green" />
+					</svg>
+					<br/>
+					<p>
+					<b>Bonifacio F. Cayabyab</b><br/>
+					University Researcher<br/>
+					NCPC, UPLB<br/>
+					</p>
+					</center>
+				</div>
+				<div class="mdl-cell mdl-cell--3-col">
+					<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="green" />
+					</svg>
+					<br/>
+					<p>
+					<b>Ireneo B. Pangga</b><br/>
+					Assistant Professor<br/>
+					CPC, CA, UPLB
+					</p>
+					</center>
+				</div>
+				<div class="mdl-cell mdl-cell--3-col">
+					<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="green" />
+					</svg>
+					<br/>
+					<p>
+					<b>Gideon Ares S. Burgonio</b><br/>
+					University Research Assistant<br/>
+					NCPC, UPLB
+					</p>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="mdl-cell mdl-cell--1-col">
+			<!--i class="material-icons md-48 margin" float="right;">chevron_right</i-->
+		</div>
+	</div>
+
+</template>
+
+
+
+
+<template name="Services">
+
+	<div class="mdl-grid max"><p><b><h4 class="left" style="color:#396834">OUR SERVICES OFFERED</h4></b></p></div>
+	<div class="max mdl-grid">
+		
+		<div id="link1" class="link mdl-cell mdl-cell--10-col">
+			<a href="/pestClinic/identify" id="link-1" class="link-1 pcindex-svc-offered-link">
+				<p class="left space">
+				<b class="pcindex-svc-offered-subtitle pcindex-svc-color">Identify Pest: </b>
+					<span class="pcindex-svc-offered-text"> Upload a photo of the pest </span>
+				</p>
+			</a>
+		</div>
+		
+		<div class="mdl-cell mdl-cell--2-col">
+		<i class="right material-icons md-48 margin pcindex-svc-color">chevron_right</i>
+		</div>
+	</div>
+	<hr/>
+	<div class="max mdl-grid">
+		<div id="link2" class="mdl-cell mdl-cell--10-col">
+			<a href="/pestClinic/assistance" id="link-2" class="link-2 pcindex-svc-offered-link">
+			<p class="left space">
+				<b class="pcindex-svc-offered-subtitle pcindex-svc-color">Request Assistance: </b>
+				<span class="pcindex-svc-offered-text"> Fill up a form after logging in to your account</span>
+			</p>
+			</a>
+		</div>
+		<div class="mdl-cell mdl-cell--2-col">
+		<i class="right material-icons md-48 margin pcindex-svc-color">chevron_right</i>
+		</div>
+	</div>
+	<hr/>
+	<div class="max mdl-grid">
+		<div id="link3" class="mdl-cell mdl-cell--10-col">
+		<a href="/pestClinic/report" id="link-3" class="link-3 pcindex-svc-offered-link">
+			<p class="left space">
+				<b class="pcindex-svc-offered-subtitle pcindex-svc-color">Report Pest Occurence: </b>
+				<span class="pcindex-svc-offered-text"> </span>
+			</p>
+		</a>
+		</div>
+		<div class="mdl-cell mdl-cell--2-col">
+		<i class="right material-icons md-48 margin pcindex-svc-color">chevron_right</i>
+		</div>
+	</div>
+	<hr/>
+	<div class="max mdl-grid">
+		<div id="link4" class="mdl-cell mdl-cell--10-col">
+		<a href="#" id="link-4" class="link-4 pcindex-svc-offered-link">
+			<p class="left space">
+				<b class="pcindex-svc-offered-subtitle pcindex-svc-color">Submit Specimen:</b>
+					<span class="pcindex-svc-offered-text"> Send a specimen to the specialists for further research </span>
+			</p>
+		</a>
+		</div>
+		<div class="mdl-cell mdl-cell--2-col">
+		<i class="right material-icons md-48 margin pcindex-svc-color">chevron_right</i>
+		</div>
+	</div>
+	
+</template>
+
+
+<template name="SampleInstructions">
+	
+	<div class="max spacing-grid mdl-grid">
+		
+			<div class="max mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col">
+					<!--center><img src="/packages/sarai_sarai-pests/public/images/clinic/micro.png" width="200px;" height="200px;" style="padding-top:20px"/></center-->
+				</div>
+				<div class="mdl-cell mdl-cell--9-col">
+					<h3 style="color:gray">Sending a Sample for Research</h3>
+					In sending a sample, you are required to first fill up a form. This form asks for general information, pest problem, and additional information. After filling up, package the sample and indicate the control number of the form before sending to the laboratory.
+					<br/><br/>
+					Note that you need to be logged in into your account to submit the form.
+				</div>
+			</div>
+			
+			<div class="mdl-grid">
+				<button id="pc-sub-sample-btn" class=" mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fill up form</button>
+				<br/>
+			</div>
+			<!--div class="max mdl-grid">
+			{{ >sampleTemplate}}
+			</div-->
+			<!--div class="max form-div"><center>
+					
+				<div class="max mdl-grid" id="geninfo">
+					{{ >GeneralInformation}}
+				</div>
+				<div class="max mdl-grid" id="pestprob">
+					{{ >PestProblemForm}}
+				</div>
+				<div class="max mdl-grid" id="addinfo">
+					{{ >AdditionalInformation}}
+				</div>
+				</center>
+			</div-->
+			
+			
+			<div id="smp-title" class="max mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col">
+				</div>
+				<div class="mdl-cell mdl-cell--9-col">
+					<h3 style="color:gray">Packaging Samples</h3>
+				</div>
+			</div>
+				
+			
+			<div class="max mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col">
+					<!--center><img src="/packages/sarai_sarai-pests/public/images/clinic/plant_black.png" width="200px;" height="200px;" style="padding-top:20px"/></center-->
+				</div>
+				<div class="mdl-cell mdl-cell--9-col">
+					<h4 class="smp-text"><b>Plant Samples</b></h4>
+					<ol>
+						<li>Carefully examine the plant.</li>
+						<li>Ideally, sending the whole plant is the best option.
+							Place the root ball in a plastic bag and wrap the leaves with paper. Send the sample as soon as possible.
+						</li>
+						<li>If the plant is large: 
+							<ul>
+								<li>Cover the leaves with dry paper and put it into a ziplock plastic bag.</li>
+								<li>Do the same on cut stems.</li>
+								<li>Shake of the soil from the roots. Wrap it with a barely damp towel and put it in a plastic bag.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="max mdl-grid">
+				<div class="mdl-cell mdl-cell--3-col">
+					<!--center><img src="/packages/sarai_sarai-pests/public/images/clinic/insect_black.png" width="200px;" height="200px;" style="padding-top:20px"/></center-->
+				</div>
+				<div class="mdl-cell mdl-cell--9-col">
+					<h4 class="smp-text"><b>Insect Samples</b></h4>
+					<ol>
+						<li>All insects should be placed in a small leak-proff container.</li>
+						<li>Tiny and/or soft-bodied specimen should be submitted in a container with 70 percent alcohol.</li>
+						<li>Hard-bodied specimens can be submitted dry on a crush-proof environment.</li>
+					</ol>
+				</div>
+			</div>
+			
+			
+				<div class="max mdl-grid">
+					<div class="mdl-cell mdl-cell--3-col">
+					</div>
+					<div class="mdl-cell mdl-cell--9-col">
+						<div class="smp-note bg">
+							<h5>Note:</h5>
+							<p>Samples should be sent after packaging. If this cannot be done on the same day, refrigerate the sample.</p>
+							<p>Ideally, samples should be hand-carried to the lab. If sending through mail, send the sample early in week to avoid the package arrival on weekends.</p>
+					</div>
+					<br/>
+				</div>
+			
+			</div>
+	</div>
+
+	
+</template>
+
+

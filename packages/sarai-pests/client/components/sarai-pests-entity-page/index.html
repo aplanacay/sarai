@@ -1,0 +1,67 @@
+<template name="EntityPage">
+	
+	<div class="mdl-grid mdl-color--grey-100">
+		<div class="mdl-cell mdl-cell--4-col">
+			<div class="mdl-shadow--2dp " style="padding:10px; background-color: white;">
+		    	<h4>{{pest.name}} Pictures</h4>
+		    	<p>Learn to identify this pest with these helpful pictures.</p>
+
+		    	<img src="/images/pests/{{imageName pest.name}}.jpg" width="150px;"/>
+		    	<p>{{pest.name}} Illustration</p>
+		    	
+		    	<p><b>Related Crop Disease/s:</b></p>
+		    	<img src="/images/diseases/RiceBlast.jpg" width="150px;"/>
+		    	<p>Rice Blast</p>
+	    	</div>	
+		</div>
+		
+		<div id="pest-main" class="mdl-cell mdl-cell--8-col">
+
+		<div class="mdl-grid mdl-shadow--2dp" style="background-color: white;">	
+			<header class="section__play-btn mdl-cell mdl-cell--5-col">
+	          <!-- <i class="material-icons">play_circle_filled</i> -->
+	          <center><img src="/images/pests/{{imageName pest.name}}.jpg" width="350px;"/></center>
+	        </header>
+			<div class="mdl-card mdl-cell mdl-cell--7-col ">
+	          <div style="padding: 10px;">
+	            <h4>{{pest.name}}</h4>
+	            <h5>English Names</h5>
+				<p>{{pest.eng_name}}</p>
+				
+	          </div>
+	        </div>
+    	</div>
+
+    	<div class="mdl-shadow--2dp " style="padding:10px; margin-top: 20px; background-color: white;">
+	    	{{#if pest.fil_name}}
+			<h5>Filipino Names</h5>
+			<p>{{pest.fil_name}}</p>
+			{{/if}}
+			<h5>Scientific Name</h5>
+			<p>{{pest.sci_name}}</p>
+			{{#if pest.description}}
+			<h5>Description</h5>
+			<p>{{pest.description}}</p>
+			{{/if}}
+    	</div>
+
+		<!-- <h2 style="text-align:center">{{pest.name}}</h2>
+		<center><img src="/images/pests/{{imageName pest.name}}.jpg" width="400px;"/></center> -->
+		
+		
+		<div class="mdl-shadow--2dp " style="padding:10px; margin-top: 20px; background-color: white;">
+		{{#if pest.symptoms}}
+			<h4>Symptoms</h4>
+			<p>{{pest.symptoms}}</p>
+		{{/if}}
+
+		{{#if pest.treatment}}
+			<h4>Management</h4>
+			<p>{{pest.treatment}}</p>
+		{{/if}}
+		</div>
+		</div>
+		</div>
+
+</template>
+

@@ -1,0 +1,91 @@
+<template name="SaraiPests">
+		<div id="banner">
+	  	<img class="banner-image" src="/packages/sarai_sarai-pests/public/images/pest_banner.png" />
+	  	<div class="banner-content-top">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						<h2 class="title">Integrated Pest Management</h2>
+						<h4 class="title-desc">An online platform that combines different strategies and practices for identification and management of pests.</h4>
+					</div>
+
+					<div class="mdl-cell mdl-cell--7-col"></div>
+
+					<div class="mdl-cell mdl-cell--5-col services-icons">
+						<div class="mdl-grid">
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<a href="{{pathFor '/pests-clinic'}}"><img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_clinic_white.png" />
+								<div class="service-label">
+									PEST CLINIC
+								</div>
+							</div>
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<a href="{{pathFor '/pests-lib'}}"><img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_book_white.png" />
+								<div class="service-label">
+									PEST LIB
+								</div></a>
+							</div>
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_identification_white.png" />
+								<div class="service-label">
+									PEST ID
+								</div>
+							</div>
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/alerts_white.png" />
+								<div class="service-label">
+									PEST MAP
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--2-col"></div>
+				</div>	
+			</div>
+		</div>
+
+
+		<div id="pest-map">
+			<h4 style="margin-left:20px;">PEST RISK MAP</h4>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col alerts">
+					<img src="/packages/sarai_sarai-pests/public/images/armyworm.png" />
+				</div>
+				<div class="mdl-cell mdl-cell--6-col alerts">
+					<img src="/packages/sarai_sarai-pests/public/images/locust.png" />
+				</div>
+			</div>
+		</div>
+		
+		<div id="pest-lib">
+			<h4 style="margin-left:20px;">RESEARCH A PEST</h4>
+			<h5 style="margin-left:20px;">Know about PESTS in your crops. Visit our Pest Library for moredetailed information and management information.</h5>
+			<div class="mdl-grid">
+				{{#each pests}}
+				<div class="mdl-cell mdl-cell--3-col">
+					<div class="demo-card-image mdl-card mdl-shadow--2dp">
+					  <div class="mdl-card__title mdl-card--expand">
+						<center><img src="/images/pests/{{imageName name}}.jpg" width="200px;" height="200px;"/></center>
+					  </div>
+					  <div class="mdl-card__actions">
+						 <span class="demo-card-image__filename">{{name}}</span>
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border">
+						 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{pathFor '/entity/:_id' _id=_id}}">
+							View Page
+						 </a>
+					  </div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+			<div class="mdl-cell mdl-cell--12-col">
+				<center><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+					View More Pests
+			 	</a></center>
+			</div>
+
+		</div>
+</template>

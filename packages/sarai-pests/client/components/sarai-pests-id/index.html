@@ -1,0 +1,56 @@
+<template name="SaraiPestsId">
+		<div id="banner">
+	  	<img class="banner-image" src="/packages/sarai_sarai-pests/public/images/pest_banner.png" />
+	  	<div class="banner-content-top">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						<h2 class="title">Pest Identification</h2>
+						<h4 class="title-desc">Identify pest by uploading a pest picture below.</h4>
+					</div>
+
+					<div class="mdl-cell mdl-cell--7-col"></div>
+
+					<div class="mdl-cell mdl-cell--5-col services-icons">
+						<div class="mdl-grid">
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<a href="{{pathFor '/pests-lib'}}"><img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_book_white.png" />
+								<div class="service-label">
+									PEST LIB
+								</div></a>
+							</div>			
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_identification_white.png" />
+								<div class="service-label">
+									PEST ID
+								</div>
+							</div>
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/alerts_white.png" />
+								<div class="service-label">
+									MONITOR
+								</div>
+							</div>
+
+							<div class="mdl-cell mdl-cell--3-col service-icon">
+								<img class="service-icon-img" src="/packages/sarai_sarai-pests/public/images/services/pest_clinic_white.png" />
+								<div class="service-label">
+									PEST CLINIC
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--2-col"></div>
+				</div>	
+			</div>
+		</div>
+		
+		<div id="pest-id">
+			<h4 style="margin-left:20px;">PEST IDENTIFICATION</h4>
+			<div class="mdl-cell mdl-cell--12-col">
+				
+				{{> dropzone fileTypes='.jpg,.png,.jpeg.,.JPG,.PNG' contentType='images' multiple=false formData=specificFormData callbacks=myCallbacks}}
+			</div>
+		</div>
+</template>
